@@ -15,6 +15,7 @@
 }
 .sub-App-title {
   font-size: 1em;
+  color: #666666;
   
 }
 
@@ -24,6 +25,32 @@
 
 .App-intro {
   font-size: large;
+}
+.MemoryCard {
+  display: inline-block;
+  Width: 150px;
+  Height: 80px;
+  margin: 3px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: navy;
+  cursor: pointer;
+  background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 10px,
+  #465298 10px,
+  #465298 20px
+);
+}
+.cardSpace {
+  margin: 0 100px 0 100px;
+}
+
+img {
+  width: 60px;
+  padding-top: 27px;
 }
 
 @keyframes App-logo-spin {
