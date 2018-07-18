@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import MemoryGame from './MemoryGame.js';
-import Ajax from './Ajax.js';
-import { Link, Route } from 'react-router-dom'; 
+import Jobs from './Jobs.js';
+import { Link, Route, Switch} from 'react-router-dom'; 
 
 
 class App extends Component {
@@ -11,12 +11,13 @@ class App extends Component {
             <div>
                 <div className="navbar">
                     <Link to='/Memory'>Memory Game</Link>
-                    <Link to='/Ajax'>Ajax</Link>
+                    <Link to='/Jobs'>Job Search</Link>
                 </div>
-                <switch>
+                <Switch>
                     <Route path='/memory' component={MemoryGame}/>
-                    <Route path='/Ajax' component={Ajax}/>
-                </switch>
+                    <Route path='/Jobs' component={Jobs}/>
+                    <Route path='/' component={MemoryGame}/>
+                </Switch>
             </div>
         )
     }
