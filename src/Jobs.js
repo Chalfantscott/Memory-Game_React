@@ -3,6 +3,8 @@ import './Jobs.css';
 import './App.css';
 import JobsListItem from './JobsListItem';
 import axios from 'axios';
+import Job from './Job.js';
+import { Switch, Route } from 'react-router-dom';
 
 
 class Jobs extends Component {
@@ -32,7 +34,10 @@ class Jobs extends Component {
                 <p className="App-subtitle">Click to Explore</p>
                 </header>
                 <div className="Jobs">
-                    {jobsJSX}
+                    <Switch>
+                        <Route exact path="/jobs" render={ () => jobsJSX } />
+                        <Route path="/jobs/:id" component={Job} /> 
+                    </Switch>
                 </div>
             </div>
         )

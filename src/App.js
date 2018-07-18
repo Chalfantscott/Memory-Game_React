@@ -14,7 +14,7 @@ class App extends Component {
                     <Link to='/Jobs'>Job Search</Link>
                 </div>
                 <Switch>
-                    <Route path='/memory' component={MemoryGame}/>
+                    <Route path='/Memory' component={MemoryGame}/>
                     <Route path='/Jobs' component={Jobs}/>
                     <Route path='/' component={MemoryGame}/>
                 </Switch>
