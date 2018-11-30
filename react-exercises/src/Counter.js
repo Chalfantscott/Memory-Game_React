@@ -14,13 +14,19 @@ class Counter extends Component {
         });
         console.log(this.state.value)
     }
+    decrementNumb = () => {
+        this.setState({
+            value: this.state.value - 1
+        });
+    }
 
     render() {
         
       return (
         <div>
             <h1>{this.state.value}</h1>
-            <button onClick={this.incrementNumb.bind(this)}>Increment</button>
+            <button onClick={this.decrementNumb}>Decrement</button>
+            <button onClick={this.incrementNumb}>Increment</button>
         </div>
       )
         
