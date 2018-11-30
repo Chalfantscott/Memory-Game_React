@@ -8,7 +8,7 @@ import './MemoryCard.css';
 
 
 
-class MemoryCardBack extends Component {
+class MemoryCard extends Component {
   
     render() {
 
@@ -30,4 +30,4 @@ class MemoryCardBack extends Component {
     }
 };
 
-export default MemoryCardBack;
+export default MemoryCard;
